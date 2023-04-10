@@ -1,0 +1,21 @@
+<div class="container">
+  <header class="jumbotron">
+    <h2>Admin Panel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Class</th>
+          <th>Attendance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.name }}</td>
+          <td>{{ student.class }}</td>
+          <td>{{ student.attendance }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+</div>
